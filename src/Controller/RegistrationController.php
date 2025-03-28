@@ -29,6 +29,6 @@ final class RegistrationController extends AbstractController
         $entityManager->persist($user);
         $entityManager->flush();
 
-        return new JsonResponse(['message' => 'User registered successfully'. $_ENV['JWT_SECRET_KEY']], 201);
+        return new JsonResponse(['message' => 'User registered successfully'], 201);
     }        
 }
